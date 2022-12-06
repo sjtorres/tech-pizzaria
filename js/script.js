@@ -8,7 +8,7 @@ pizzaJson.map((item, index) => {
 
   // preencher os dados de cada pizza
   pizzaItem.querySelector('.pizza-item--img img').src = item.img
-  pizzaItem.querySelector('.pizza-item--price').innerHTML = `R$ ${item.price}`
+  pizzaItem.querySelector('.pizza-item--price').innerHTML = `R$ ${item.price[2]}`
   pizzaItem.querySelector('.pizza-item--name').innerHTML = item.name
   pizzaItem.querySelector('.pizza-item--desc').innerHTML = item.description
 
@@ -24,7 +24,7 @@ pizzaJson.map((item, index) => {
     document.querySelector('.pizzaBig img').src = item.img
     document.querySelector('.pizzaInfo h1').innerHTML = item.name
     document.querySelector('.pizzaInfo--desc').innerHTML = item.description
-    document.querySelector('.pizzaInfo--actualPrice').innerHTML = `R$ ${item.price}`
+    document.querySelector('.pizzaInfo--actualPrice').innerHTML = `R$ ${item.price[2]}`
 
   })
 

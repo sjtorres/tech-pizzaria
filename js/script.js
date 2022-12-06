@@ -143,7 +143,7 @@ pizzaJson.map((item, index) => {
   // pizza clicada
   pizzaItem.querySelector('.pizza-item a').addEventListener('click', (e) => {
     e.preventDefault()
-    console.log('Clicou na pizza')
+    // console.log('Clicou na pizza')
 
     let chave = pegarKey(e)
     
@@ -167,3 +167,5 @@ pizzaJson.map((item, index) => {
   botoesFechar()
 
 }) // fim do MAPEAR pizzaJson para gerar lista de pizzas
+
+mudarQuantidade()
